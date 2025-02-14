@@ -127,7 +127,7 @@
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 30px;
   height: 30px;
-  background: url(/src/assets/img/swipper/swiper_surcle_active.png) no-repeat center/cover;
+  background: url(../../../assets/img/swipper/swiper_surcle_active.png) no-repeat center/cover;
   border: none;
 }
 
