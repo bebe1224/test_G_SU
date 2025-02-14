@@ -5,7 +5,7 @@
 
 //sect 요소 위치 개별
 .sect1 {
-    background: url(/src/assets/img/Contact_US/sect1_bg.png)no-repeat center/cover;
+    background: url(../../../assets/img/Contact_US/sect1_bg.png)no-repeat center/cover;
     height: 492px !important;
 
     .inner {
@@ -61,7 +61,7 @@
         @include fesc;
         gap: 20px;
         padding: 32px;
-        background: url(/src/assets/img/Contact_US/sect2_img.png)no-repeat center/cover;
+        background: url(../../../assets/img/Contact_US/sect2_img.png)no-repeat center/cover;
         width: calc(1180px / 2);
         height: 100%;
 

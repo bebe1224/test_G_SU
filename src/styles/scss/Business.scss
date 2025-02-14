@@ -8,7 +8,7 @@ body {
 
 //sect 개별
 .sect1 {
-    background: url(/src/assets/img/Business/sect1_bg.png)no-repeat center/cover;
+    background: url(../../../assets/img/Business/sect1_bg.png)no-repeat center/cover;
     background-attachment: fixed;
 
     .inner {
@@ -377,7 +377,7 @@ body {
 
     //sect 개별
     .sect1 {
-        background: url(/src/assets/img/Business/m_sect1_bg.png)no-repeat center/cover;
+        background: url(../../../assets/img/Business/m_sect1_bg.png)no-repeat center/cover;
 
         .inner {
             @include fec;

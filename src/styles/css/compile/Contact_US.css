@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .sect1 {
-  background: url(/src/assets/img/Contact_US/sect1_bg.png) no-repeat center/cover;
+  background: url(../../../assets/img/Contact_US/sect1_bg.png) no-repeat center/cover;
   height: 492px !important;
 }
 .sect1 .inner {
@@ -65,7 +65,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 32px;
-  background: url(/src/assets/img/Contact_US/sect2_img.png) no-repeat center/cover;
+  background: url(../../../assets/img/Contact_US/sect2_img.png) no-repeat center/cover;
   width: 590px;
   height: 100%;
 }

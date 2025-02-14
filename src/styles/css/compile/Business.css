@@ -3,7 +3,7 @@ body {
 }
 
 .sect1 {
-  background: url(/src/assets/img/Business/sect1_bg.png) no-repeat center/cover;
+  background: url(../../../assets/img/Business/sect1_bg.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 .sect1 .inner {
@@ -284,7 +284,7 @@ body {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .sect1 {
-    background: url(/src/assets/img/Business/m_sect1_bg.png) no-repeat center/cover;
+    background: url(../../../assets/img/Business/m_sect1_bg.png) no-repeat center/cover;
   }
   .sect1 .inner {
     display: flex;
