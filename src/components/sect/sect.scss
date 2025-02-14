@@ -7,6 +7,7 @@
     user-select: none; //파란 선택 영역 안생김
     position: relative;
     width: 100%;
+    min-width: 1920px;
     height: 100vh;
     background-color: $secondary-color3;
 
@@ -44,8 +45,10 @@
 
     // sect 공통
     .sect {
-        .inner {
-            width: 440px;
+        min-width: 480px;
+
+        .inner {border: 1px solid #000;
+            width: 90%;
         }
     }
 }

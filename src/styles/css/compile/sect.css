@@ -4,6 +4,7 @@
           user-select: none;
   position: relative;
   width: 100%;
+  min-width: 1920px;
   height: 100vh;
   background-color: #FBFBFB;
 }
@@ -34,7 +35,11 @@
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .sect {
+    min-width: 480px;
+  }
   .sect .inner {
-    width: 440px;
+    border: 1px solid #000;
+    width: 90%;
   }
 }
