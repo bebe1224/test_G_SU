@@ -1,5 +1,5 @@
 .sect1 {
-  background: url(/src/assets/img/About_Us/sect1_bg.png) no-repeat center/cover;
+  background: url(../../../assets/img/About_Us/sect1_bg.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .sect3 {
-  background: url(/src/assets/img/About_Us/sect3_bg.png) no-repeat center/cover;
+  background: url(../../../assets/img/About_Us/sect3_bg.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 
@@ -95,7 +95,7 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
   .sect1 {
-    background: url(/src/assets/img/About_Us/M_sect1_bg.png) no-repeat center/cover;
+    background: url(../../../assets/img/About_Us/M_sect1_bg.png) no-repeat center/cover;
   }
   .sect4 .inner {
     display: flex;
