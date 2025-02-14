@@ -52,7 +52,7 @@
 
 // 이미지,배경지정
 .sect3 {
-    background: url(/src/assets/img/main_page/sect3_bg.png)no-repeat center/cover;
+    background: url(../../assets/img/main_page/sect3_bg.png)no-repeat center/cover;
     // 절대경로를 사용하여 해결함!!
     background-attachment: fixed;
 }
