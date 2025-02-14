@@ -100,7 +100,7 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
   .sect1 {
-    background: url(/src/assets/img/main_page/m_sect1_img1.png) no-repeat center/cover;
+    background: url(../../assets/img/main_page/m_sect1_img1.png) no-repeat center/cover;
   }
   .sect1 video {
     display: none;
@@ -161,7 +161,7 @@
     letter-spacing: -2px;
   }
   .sect3 {
-    background: url(/src/assets/img/main_page/M_sect3_bg.png);
+    background: url(../../assets/img/main_page/M_sect3_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
