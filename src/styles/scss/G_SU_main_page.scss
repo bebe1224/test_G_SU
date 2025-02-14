@@ -52,7 +52,7 @@
 
 // 이미지,배경지정
 .sect3 {
-    background: url(../../assets/img/main_page/sect3_bg.png)no-repeat center/cover;
+    background: url("../../../assets/img/main_page/sect3_bg.png") no-repeat center/cover;
     // 절대경로를 사용하여 해결함!!
     background-attachment: fixed;
 }
@@ -119,7 +119,7 @@
 
     //배경지정
     .sect1 {
-        background: url(../../assets/img/main_page/m_sect1_img1.png)no-repeat center/cover;
+        background: url(../../../assets/img/main_page/m_sect1_img1.png)no-repeat center/cover;
 
         video {
             display: none;
@@ -180,7 +180,7 @@
 
     // 이미지,배경지정
     .sect3 {
-        background: url(../../assets/img/main_page/M_sect3_bg.png);
+        background: url(../../../assets/img/main_page/M_sect3_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
