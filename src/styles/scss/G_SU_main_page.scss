@@ -1,0 +1,245 @@
+@import "../../styles/scss/color.scss";
+@import "../../styles/scss/flex_mixins.scss";
+
+// 위치 크기지정
+.sect1,
+.sect3 {
+    .inner {
+        @include fec;
+
+        .wrap {
+            @include fcsc;
+            gap: 52px;
+            width: 562px;
+
+            .title1 {
+                width: 454px;
+                letter-spacing: -6px;
+            }
+
+            .sub_title1 {
+                width: 562px;
+                letter-spacing: -2px;
+            }
+
+            // btn3{} 여기있음
+        }
+    }
+}
+
+.sect2,
+.sect4 {
+    .inner {
+        @include fsc;
+
+        .wrap {
+            @include fcsc;
+            gap: 52px;
+            width: 562px;
+
+            .title2 {
+                width: 454px;
+                letter-spacing: -6px;
+            }
+
+            .sub_title2 {
+                width: 562px;
+                letter-spacing: -2px;
+            }
+        }
+    }
+}
+
+// 이미지,배경지정
+.sect3 {
+    background: url(/src/assets/img/main_page/sect3_bg.png)no-repeat center/cover;
+    // 절대경로를 사용하여 해결함!!
+    background-attachment: fixed;
+}
+
+.sect4 {
+    .inner {
+
+        // @include fsbc; 인상태
+        // .wrap{} 이있는 상태 
+        img {
+            width: 712px;
+        }
+    }
+}
+
+//swiper400
+.sect2 {
+    @include fec;
+
+    .swiper_screen {
+        overflow: hidden;
+        position: relative;
+        width: 47%;
+        height: 100vh;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        background-color: $primary-color0;
+
+
+        .height400 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .swiper-wrapper {
+                .swiper-slide {}
+            }
+
+            .swiper-pagination {
+                margin-top: 32px;
+            }
+        }
+    }
+}
+
+//btn 개별
+.btn {
+    transition: filter 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    &:hover {
+        filter: invert(1);
+    }
+}
+.btn14 {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-10%, -90%);
+    z-index: 1;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    //배경지정
+    .sect1 {
+        background: url(/src/assets/img/main_page/m_sect1_img1.png)no-repeat center/cover;
+
+        video {
+            display: none;
+        }
+    }
+
+    // 위치 크기지정
+    .sect1,
+    .sect3 {
+        .inner {
+            @include fsc;
+
+            .wrap {
+                @include fcsc;
+                gap: 52px;
+                width: 400px;
+
+                .title1 {
+                    width: 284px;
+                    letter-spacing: -3px;
+                }
+
+                .sub_title1 {
+                    width: 400px;
+                }
+
+                // btn3{} 여기있음
+            }
+        }
+    }
+
+    .sect2,
+    .sect4 {
+        @include fec;
+
+        //스와이퍼 슬라이드 위치
+        .inner {
+            @include fsbc;
+
+            .wrap {
+                @include fcsc;
+                gap: 52px;
+                width: 400px;
+
+                .title2 {
+                    width: 280px;
+                    letter-spacing: -6px;
+                }
+
+                .sub_title2 {
+                    width: 400px;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+    }
+
+
+    // 이미지,배경지정
+    .sect3 {
+        background: url(/src/assets/img/main_page/M_sect3_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sect4 {
+        .inner {
+            @include fcc;
+            position: relative;
+
+            // @include fsbc; 인상태
+            .wrap {
+                @include fccc;
+                gap: 160px;
+                width: 400px;
+
+                .title2 {
+                    text-align: center;
+                    width: 280px;
+                    letter-spacing: -6px;
+                }
+
+                .sub_title2 {
+                    width: 400px;
+                    letter-spacing: -2px;
+                }
+            }
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                width: 480px;
+                filter: contrast(60%) saturate(60%);
+            }
+        }
+    }
+
+    // 타이틀 개별
+    .sect2 .sub_title2 {
+        color: black;
+    }
+
+    .sub_title2 {
+        color: $primary-color0;
+
+        span {
+            &:nth-of-type(1) {
+                font-size: 32px;
+            }
+        }
+    }
+
+    //swiper 개별
+    .swiper_screen {
+        display: none;
+
+        .height400 {}
+    }
+}

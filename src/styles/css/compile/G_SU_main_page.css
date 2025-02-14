@@ -1,0 +1,213 @@
+.sect1 .inner,
+.sect3 .inner {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.sect1 .inner .wrap,
+.sect3 .inner .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 52px;
+  width: 562px;
+}
+.sect1 .inner .wrap .title1,
+.sect3 .inner .wrap .title1 {
+  width: 454px;
+  letter-spacing: -6px;
+}
+.sect1 .inner .wrap .sub_title1,
+.sect3 .inner .wrap .sub_title1 {
+  width: 562px;
+  letter-spacing: -2px;
+}
+
+.sect2 .inner,
+.sect4 .inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.sect2 .inner .wrap,
+.sect4 .inner .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 52px;
+  width: 562px;
+}
+.sect2 .inner .wrap .title2,
+.sect4 .inner .wrap .title2 {
+  width: 454px;
+  letter-spacing: -6px;
+}
+.sect2 .inner .wrap .sub_title2,
+.sect4 .inner .wrap .sub_title2 {
+  width: 562px;
+  letter-spacing: -2px;
+}
+
+.sect3 {
+  background: url(/src/assets/img/main_page/sect3_bg.png) no-repeat center/cover;
+  background-attachment: fixed;
+}
+
+.sect4 .inner img {
+  width: 712px;
+}
+
+.sect2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.sect2 .swiper_screen {
+  overflow: hidden;
+  position: relative;
+  width: 47%;
+  height: 100vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: #FFFFFF;
+}
+.sect2 .swiper_screen .height400 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sect2 .swiper_screen .height400 .swiper-pagination {
+  margin-top: 32px;
+}
+
+.btn {
+  transition: filter 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.btn:hover {
+  filter: invert(1);
+}
+
+.btn14 {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(-10%, -90%);
+  z-index: 1;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .sect1 {
+    background: url(/src/assets/img/main_page/m_sect1_img1.png) no-repeat center/cover;
+  }
+  .sect1 video {
+    display: none;
+  }
+  .sect1 .inner,
+  .sect3 .inner {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .sect1 .inner .wrap,
+  .sect3 .inner .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 52px;
+    width: 400px;
+  }
+  .sect1 .inner .wrap .title1,
+  .sect3 .inner .wrap .title1 {
+    width: 284px;
+    letter-spacing: -3px;
+  }
+  .sect1 .inner .wrap .sub_title1,
+  .sect3 .inner .wrap .sub_title1 {
+    width: 400px;
+  }
+  .sect2,
+  .sect4 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .sect2 .inner,
+  .sect4 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sect2 .inner .wrap,
+  .sect4 .inner .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 52px;
+    width: 400px;
+  }
+  .sect2 .inner .wrap .title2,
+  .sect4 .inner .wrap .title2 {
+    width: 280px;
+    letter-spacing: -6px;
+  }
+  .sect2 .inner .wrap .sub_title2,
+  .sect4 .inner .wrap .sub_title2 {
+    width: 400px;
+    letter-spacing: -2px;
+  }
+  .sect3 {
+    background: url(/src/assets/img/main_page/M_sect3_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .sect4 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .sect4 .inner .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 160px;
+    width: 400px;
+  }
+  .sect4 .inner .wrap .title2 {
+    text-align: center;
+    width: 280px;
+    letter-spacing: -6px;
+  }
+  .sect4 .inner .wrap .sub_title2 {
+    width: 400px;
+    letter-spacing: -2px;
+  }
+  .sect4 .inner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 480px;
+    filter: contrast(60%) saturate(60%);
+  }
+  .sect2 .sub_title2 {
+    color: black;
+  }
+  .sub_title2 {
+    color: #FFFFFF;
+  }
+  .sub_title2 span:nth-of-type(1) {
+    font-size: 32px;
+  }
+  .swiper_screen {
+    display: none;
+  }
+}

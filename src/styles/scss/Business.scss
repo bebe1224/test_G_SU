@@ -1,0 +1,602 @@
+@import "../scss/color.scss";
+@import "../scss/flex_mixins.scss";
+
+//body 개별
+body {
+    overflow-x: hidden;
+}
+
+//sect 개별
+.sect1 {
+    background: url(/src/assets/img/Business/sect1_bg.png)no-repeat center/cover;
+    background-attachment: fixed;
+
+    .inner {
+        @include fec;
+
+        .wrap {
+            @include fcsc;
+            gap: 52px;
+            width: 450px;
+
+            // .title3 {}
+
+            // .sub_title3 {}
+        }
+    }
+}
+
+.sect2 {
+    height: 1180px !important;
+
+    .inner {
+        @include fccc;
+        gap: 68px;
+        height: 1180px !important;
+    }
+}
+
+.sect3 {
+    height: 1180px !important;
+
+    .inner {
+        @include fccc;
+        gap: 68px;
+        height: 1180px !important;
+    }
+}
+
+// .title 개별
+.sub_title3 {
+    letter-spacing: -1.2px;
+}
+
+.sub_title6 {
+    width: 500px;
+    letter-spacing: -2px;
+}
+
+// .tab .btn 개별 
+.btn {
+    transition: 0.3s ease;
+
+    &:hover {
+        filter: invert(1);
+    }
+
+    &.on {
+        color: $primary-color0;
+        background: $primary-color4;
+        filter: invert(0);
+    }
+}
+
+// wrap 개별 pagination 과 tab_boxs 간격 조정
+.sect2 .wrap {
+    @include fccc;
+    gap: 16px;
+    width: 100%;
+}
+
+.sect3 .wrap {
+    @include fccc;
+    gap: 16px;
+    width: 100%;
+}
+
+// swiper 개별
+.sect2 .swiper {
+    .swiper-wrapper {
+        .swiper-slide {
+            @include fsbc;
+            padding: 0px 48px 0px 48px;
+
+            .i_ws {
+                position: relative;
+                width: 590px;
+                height: 520px;
+
+                .i_w {
+                    @include fcc;
+                    position: absolute;
+                    width: 360px;
+                    height: 480px;
+                    border-radius: 9px 9px 9px 9px;
+                    overflow: hidden;
+                    filter: contrast(90%) saturate(40%);
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                    background-color: $primary-color0;
+
+                    &:hover:nth-of-type(2) {
+                        z-index: 1;
+                    }
+
+                    &:nth-of-type(1) {
+                        bottom: 0;
+                        left: 0;
+                        z-index: 1;
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 19px;
+                        left: 204px;
+                        transform: rotate(6.2deg);
+                    }
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            // .sub_title6{} 이자리에 있음 
+        }
+
+    }
+}
+
+.sect3 {
+    .inner {
+        .wrap {
+            .tab_boxs {
+                .tab_box {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                padding: 32px;
+
+                                .i_ws {
+                                    .i_w {
+                                        position: relative;
+                                        border-radius: 9px;
+                                        overflow: hidden;
+                                        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+                                        &:hover span {
+                                            opacity: 1;
+                                        }
+
+                                        img {
+                                            width: 100%;
+                                            transition: 0.5s ease-in-out;
+                                            filter: contrast(90%) saturate(40%);
+
+                                            &:hover {
+                                                transform: scale(1.1);
+                                                opacity: 1;
+                                                filter: none;
+                                            }
+                                        }
+
+                                        span {
+                                            @include fsc;
+                                            padding-left: 16px;
+                                            width: 100%;
+                                            height: 32px;
+                                            position: absolute;
+                                            bottom: 0%;
+                                            left: 0%;
+                                            background-color:
+                                                $primary-color5;
+                                            color: $primary-color0;
+                                            font-weight: bold;
+                                            opacity: 0;
+                                            transition: 0.5s ease-in-out;
+                                        }
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                // 탭박스 1~4 스와이퍼슬라이드 요소들 크기지정
+                .tab_box1,
+                .tab_box2 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                @include fcs;
+                                gap: 28px;
+
+
+                                .i_ws {
+                                    @include fccc;
+                                    gap: 16px;
+
+                                    .i_w {
+                                        @include fcc;
+                                        width: 280px;
+                                        height: auto;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .tab_box3 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                @include fcs;
+                                gap: 28px;
+
+                                //특정 i_w 크기 키우기위해서
+                                &:nth-of-type(3) {
+                                    .i_ws {
+                                        &:nth-of-type(2) {
+                                            .i_w {
+                                                width: 600px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .i_ws {
+                                    @include fccc;
+                                    gap: 16px;
+
+                                    .i_w {
+                                        @include fcc;
+                                        width: 280px;
+                                        height: auto;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .tab_box4 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                @include fsbc;
+                                gap: 28px;
+
+                                .i_ws {
+                                    @include fcs;
+                                    height: 555px;
+
+                                    &:nth-of-type(2) {
+                                        @include fce;
+                                    }
+
+                                    .i_w {
+                                        @include fcc;
+                                        width: 520px;
+                                        height: auto;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                //pc에서 숨길 슬라이드
+                .tab_box1 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+
+                                &:nth-of-type(3),
+                                &:nth-of-type(4),
+                                &:nth-of-type(5),
+                                &:nth-of-type(6),
+                                &:nth-of-type(7),
+                                &:nth-of-type(8),
+                                &:nth-of-type(9) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tab_box2 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+
+                                &:nth-of-type(2),
+                                &:nth-of-type(3) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tab_box3 {
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+
+                                &:nth-of-type(n+4):nth-of-type(-n+14) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //.tab_box4는 향후 필요하면~
+            }
+        }
+    }
+}
+
+.sect2 .tab_box3 .swiper .swiper-slide,
+.sect2 .tab_box4 .swiper .swiper-slide,
+.sect2 .tab_box5 .swiper .swiper-slide {
+    .i_ws {
+        position: relative;
+        width: 590px;
+        height: 520px;
+
+        .i_w {
+            width: 440px;
+            height: 360px;
+        }
+    }
+}
+
+.faro_3d {
+    object-fit: contain !important;
+    width: 100% !important;
+}
+
+// swiper 버튼 개별
+.svg_prev {
+    position: absolute;
+    left: -59px;
+    top: 650px;
+}
+
+.svg_next {
+    position: absolute;
+    right: -59px;
+    top: 650px;
+}
+
+.swiper-pagination {
+    height: 32px; //일부로 높이를 줌 그래야 얘가없는 슬라이드에서도 높이가 있어서 탭할때 이상하지않음
+    justify-content: end !important;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    //sect 개별
+    .sect1 {
+        background: url(/src/assets/img/Business/m_sect1_bg.png)no-repeat center/cover;
+
+        .inner {
+            @include fec;
+            position: relative;
+
+            .wrap {
+                @include fcsc;
+                gap: 48px;
+
+                // .title3 {}
+
+                // .sub_title3 {}
+            }
+        }
+    }
+
+    .sect2 {
+        .inner {
+            position: relative;
+        }
+    }
+
+    // .title 개별
+    .sub_title3 {
+        font-size: 16px !important;
+    }
+
+    .title5 {
+        font-size: 32px !important;
+    }
+
+    // .tab .btn 개별 
+    .btn_wrap {
+        @include fsc;
+        flex-wrap: wrap;
+
+        .btn {
+            width: 218px !important;
+            border-radius: 9px !important;
+        }
+    }
+
+    //  swipper 개별
+    .height635 {
+        width: 85% !important;
+    }
+
+    .sect2 .swiper {
+        .swiper-wrapper {
+            .swiper-slide {
+                @include fccc;
+                gap: 32px;
+                padding: 0;
+
+                .i_ws {
+                    width: 330px;
+                    height: 390px;
+
+                    .i_w {
+                        width: 220px;
+                        height: 290px;
+
+                        &:nth-of-type(2) {
+                            top: 10px;
+                            left: 90px;
+                            transform: rotate(6.2deg);
+                        }
+                    }
+                }
+
+                .sub_title6 {
+                    font-size: 18px;
+                    width: 330px;
+                }
+            }
+
+        }
+    }
+
+    .sect2 .tab_box3 .swiper .swiper-slide,
+    .sect2 .tab_box4 .swiper .swiper-slide,
+    .sect2 .tab_box5 .swiper .swiper-slide {
+        .i_ws {
+            .i_w {
+                width: 330px;
+                height: 180px;
+                top: 0px;
+
+                &:nth-of-type(2) {
+                    top: 200px;
+                    left: 0px;
+                    transform: rotate(0deg);
+                }
+
+                img {
+                    transition: 0.5s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.08);
+                    }
+                }
+            }
+        }
+    }
+
+    //swipper tab 박스 개별
+    .sect3 {
+        .inner {
+            .wrap {
+                .tab_boxs {
+
+                    // 탭박스 1~4 스와이퍼슬라이드 요소들 크기지정
+                    .tab_box1,
+                    .tab_box2,
+                    .tab_box3,
+                    .tab_box4 {
+                        .swiper {
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    @include fscc;
+                                    gap: 28px;
+                                    padding: 48px 0px;
+
+                                    .i_ws {
+                                        @include fccc;
+                                        gap: 16px;
+
+                                        .i_w {
+                                            @include fcc;
+                                            width: 280px;
+                                            height: auto;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                    // 모바일에서 숨기거나 보일 슬라이드
+                    .tab_box1 {
+                        .swiper {
+                            .swiper-wrapper {
+                                .swiper-slide {
+
+                                    &:nth-of-type(1),
+                                    &:nth-of-type(2) {
+                                        display: none;
+                                    }
+
+                                    &:nth-of-type(3),
+                                    &:nth-of-type(4),
+                                    &:nth-of-type(5),
+                                    &:nth-of-type(6),
+                                    &:nth-of-type(7),
+                                    &:nth-of-type(8),
+                                    &:nth-of-type(9) {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .tab_box2 {
+                        .swiper {
+                            .swiper-wrapper {
+                                .swiper-slide {
+
+                                    &:nth-of-type(1) {
+                                        display: none;
+                                    }
+
+                                    &:nth-of-type(2),
+                                    &:nth-of-type(3) {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .tab_box3 {
+                        .swiper {
+                            .swiper-wrapper {
+                                .swiper-slide {
+
+                                    &:nth-of-type(1),
+                                    &:nth-of-type(2),
+                                    &:nth-of-type(3) {
+                                        display: none;
+                                    }
+
+                                    &:nth-of-type(n+4):nth-of-type(-n+14) {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //.tab_box4는 향후 필요하면~
+                }
+            }
+        }
+    }
+
+    // swipper btn 개별
+    .svg_prev {
+        position: absolute;
+        top: 50%;
+        left: -8px;
+        transform: translate(0%, -50%);
+    }
+
+    .svg_next {
+        position: absolute;
+        top: 50%;
+        right: -8px;
+        transform: translate(0%, -50%);
+    }
+}

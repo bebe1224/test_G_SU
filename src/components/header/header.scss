@@ -1,0 +1,287 @@
+@import "../../styles/scss/color.scss";
+@import "../../styles/scss/flex_mixins.scss";
+
+.header {
+    @include fcc;
+    width: 100%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    transition: 0.5s ease-in-out;
+    background-color: $primary-color0;
+
+    &.scrolled {
+        transform: translateY(-100px);
+    }
+
+    .inner {
+        @include fsbc;
+        width: 1280px;
+        height: 100%;
+
+        h1 {
+            width: 188px;
+            height: 68px;
+            transition: opacity 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            img {
+                width: 188px;
+                height: 68px;
+            }
+        }
+
+        nav {
+            @include fcc;
+            gap: 32px;
+
+            .gnb {
+                @include fcc;
+                gap: 68px;
+
+                .main_menu {
+                    a {
+                        font-size: 24px;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            color: $primary-color3;
+                        }
+                    }
+                }
+            }
+
+            .glob {
+                width: 36px;
+                height: 36px;
+                opacity: 0.5;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.header1 {
+    @include fcc;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: transparent;
+    transition: 0.5s ease-in-out;
+
+    &.scrolled {
+        transform: translateY(-100px);
+    }
+
+    .inner {
+        @include fsbc;
+        width: 1280px;
+        height: 100%;
+
+        h1 {
+            width: 188px;
+            height: 68px;
+            transition: opacity 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            img {
+                filter: brightness(1000%) grayscale(100%);
+                width: 188px;
+                height: 68px;
+            }
+        }
+
+        nav {
+            @include fcc;
+            gap: 32px;
+
+            .gnb {
+                @include fcc;
+                gap: 68px;
+
+                .main_menu {
+                    a {
+                        white-space: nowrap; //화면줄때 줄넘김 방지
+                        color: $primary-color0;
+                        font-size: 24px;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            color: $secondary-color4;
+                        }
+                    }
+
+                }
+            }
+
+            .glob {
+                width: 36px;
+                height: 36px;
+                opacity: 0.5;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+
+                img {
+                    filter: invert(100%);
+                    width: 100%;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .header {
+        @include fcc;
+        height: 80px;
+
+        &.scrolled {
+            transform: translateY(-80px);
+        }
+
+        .inner {
+            @include fsbc;
+            width: 440px;
+
+            h1 {
+                width: 138px;
+                height: 48px;
+
+                img {
+                    width: 138px;
+                    height: 48px;
+                }
+            }
+
+            nav {
+                @include fcc;
+                gap: 32px;
+
+                .gnb {
+                    @include fcc;
+                    gap: 68px;
+                    display: none;
+
+                    .main_menu {
+                        a {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .glob {
+                    width: 36px;
+                    height: 36px;
+                    opacity: 0.5;
+                    transition: 0.3s ease-in-out;
+
+                    a {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .header1 {
+        @include fcc;
+        height: 80px;
+
+        &.scrolled {
+            transform: translateY(-80px);
+        }
+
+        .inner {
+            @include fsbc;
+            width: 440px;
+
+            h1 {
+                width: 138px;
+                height: 48px;
+
+                img {
+                    width: 138px;
+                    height: 48px;
+                }
+            }
+
+            nav {
+                @include fcc;
+                gap: 32px;
+
+                .gnb {
+                    @include fcc;
+                    gap: 68px;
+                    display: none;
+
+                    .main_menu {
+
+                        a {
+                            color: $primary-color0;
+                            font-size: 24px;
+                        }
+
+                        .sub_menu {
+                            display: none;
+
+                            li {
+                                a {}
+                            }
+                        }
+                    }
+                }
+
+                .glob {
+                    width: 36px;
+                    height: 36px;
+                    opacity: 0.5;
+                    transition: 0.3s ease-in-out;
+
+                    a {
+                        width: 100%;
+
+                        img {
+                            filter: invert(100%);
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

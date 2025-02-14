@@ -1,0 +1,74 @@
+@import "../../styles/scss/color.scss";
+@import "../../styles/scss/flex_mixins.scss";
+
+// 흘러가는배너(1)
+.banner_wrap {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background-color: $primary-color6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    .rolling-list {
+        ul {
+            display: flex;
+
+            li {
+                @include fcc;
+                width: 128px;
+                height: 80px;
+                margin: 0 16px;
+                flex-shrink: 0;
+
+                a {
+                    img {
+                        object-fit: scale-down;
+                        width: 128px;
+                    }
+
+                    .banner_img14 {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 속도조절
+.rolling-list.original {
+    animation: rollingleft1 66s linear infinite;
+}
+
+.rolling-list.clone {
+    animation: rollingleft2 66s linear infinite;
+}
+
+@keyframes rollingleft1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    50.01% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollingleft2 {
+    0% {
+        transition: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+

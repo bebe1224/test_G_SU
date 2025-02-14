@@ -1,0 +1,115 @@
+.title1 {
+  font-size: 58px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.sub_title1 {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.sub_title1 span {
+  font-family: "DM Serif Display", serif;
+}
+
+.sub_title1_1 {
+  font-size: 32px;
+  color: #CFCFCF;
+}
+
+.title2 {
+  font-size: 58px;
+  font-weight: bold;
+  color: #434343;
+}
+.title2 span {
+  color: #7C0002;
+}
+
+.sub_title2 {
+  font-size: 24px;
+}
+.sub_title2 span {
+  font-family: "DM Serif Display", serif;
+}
+
+.title3 {
+  font-family: "DM Serif Display", serif;
+  color: #FFFFFF;
+  font-size: 58px;
+}
+
+.sub_title3 {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.sub_title3 span {
+  font-weight: bold;
+}
+
+.title4 {
+  font-family: "Italiana", serif;
+  color: #3F3F3F;
+  font-size: 58px;
+}
+
+.sub_title4 {
+  font-weight: bold;
+  color: #3F3F3F;
+  font-size: 24px;
+}
+.sub_title4 span {
+  color: #838383;
+  font-size: 16px;
+}
+
+.title5 {
+  color: #434343;
+  font-size: 58px;
+}
+
+.sub_title5 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.sub_title5 span {
+  color: #838383;
+  font-size: 16px;
+}
+
+.sub_title6 {
+  font-size: 28px;
+  color: #434343;
+}
+.sub_title6 span {
+  font-weight: bold;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .title1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  .sub_title1 {
+    font-size: 18px;
+  }
+  .sub_title1_1 {
+    font-size: 32px;
+    color: #CFCFCF;
+  }
+  .title2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #434343;
+  }
+  .title2 span {
+    color: #7C0002;
+  }
+  .sub_title2 {
+    font-size: 18px;
+  }
+  .sub_title2 span {
+    font-family: "DM Serif Display", serif;
+  }
+}

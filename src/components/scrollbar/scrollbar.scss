@@ -1,0 +1,22 @@
+@import "../../styles/scss/color.scss";
+@import "../../styles/scss/flex_mixins.scss";
+
+body {
+    &::-webkit-scrollbar {
+        width: 8px; // 스크롤바 너비
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3); // 스크롤바 손잡이 색상
+        border-radius: 4px; // 둥근 모서리
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.5); // 호버 시 손잡이 색상 변경
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1); // 스크롤바 배경
+        border-radius: 4px; // 둥근 모서리
+    }
+}

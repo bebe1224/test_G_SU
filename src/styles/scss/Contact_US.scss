@@ -1,0 +1,246 @@
+@import "../../styles/scss/color.scss";
+@import "../../styles/scss/flex_mixins.scss";
+
+
+
+//sect 요소 위치 개별
+.sect1 {
+    background: url(/src/assets/img/Contact_US/sect1_bg.png)no-repeat center/cover;
+    height: 492px !important;
+
+    .inner {
+        @include fsc;
+
+        .wrap {
+            @include fcsc;
+            gap: 16px;
+        }
+
+    }
+}
+
+.sect2 {
+    min-height: 1180px !important;
+
+    .inner {
+        @include fcc;
+    }
+}
+
+.sect3 {
+    height: 780px !important;
+
+    .inner {
+        @include fscc;
+        gap: 80px;
+        height: 780px !important;
+
+        .wrap {
+            @include fcc;
+            gap: 80px;
+        }
+    }
+}
+
+// 지도 개별 
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+// contact_box 개별
+.contact_box {
+    @include fcc;
+    width: 1180px;
+    height: 778px;
+    border-radius: 9px 9px 9px 9px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    .left {
+        @include fesc;
+        gap: 20px;
+        padding: 32px;
+        background: url(/src/assets/img/Contact_US/sect2_img.png)no-repeat center/cover;
+        width: calc(1180px / 2);
+        height: 100%;
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: $primary-color0;
+        }
+    }
+
+    .right {
+        @include fcc;
+        width: calc(1180px / 2);
+        height: 100%;
+    }
+}
+
+// form 개별
+form {
+    @include fccc;
+    gap: 32px;
+
+    .wrap {
+        @include fcsc;
+        gap: 8px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    input {
+        width: 467px;
+        height: 36px;
+        border: 1px solid $secondary-color8;
+        background-color: $secondary-color11;
+        font-size: 21px;
+    }
+
+    textarea {
+        width: 467px;
+        height: 180px;
+        border: 1px solid $secondary-color8;
+        background-color: $secondary-color11;
+        resize: none;
+        /* 크기 조정 비활성화 */
+        font-size: 21px;
+    }
+
+}
+
+.btn {
+    font-family: initial !important;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        filter: invert(1);
+    }
+}
+
+// i_w 개별 
+.sect3 .inner .wrap .i_w {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: filter 0.3s ease-in-out, ;
+    filter: brightness(0.7) invert(0);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    &:hover {
+        filter: none;
+    }
+
+    &:hover img {
+        transform: scale(1.05);
+    }
+
+    &:hover span {
+        opacity: 1;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-in-out, ;
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 9px;
+        padding: 8px 16px;
+        width: 250px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: $secondary-color12;
+        background-color: $primary-color6;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+}
+
+//title 개별
+.sect3 .inner .title2 {
+    margin-top: 48px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    //sect 요소 위치 개별
+    .sect3 {
+        height: 100vh !important;
+
+        .inner {
+            @include fscc;
+            gap: 60px;
+            height: 100vh !important;
+
+            .wrap {
+                @include fccc;
+                gap: 32px;
+            }
+        }
+    }
+
+    // i_w 개별 
+    .sect3 .inner .wrap .i_w {
+        width: 300px;
+        height: 300px;
+
+        span {
+            width: 200px;
+            font-size: 14px;
+        }
+    }
+
+    // contact_box 개별
+    .contact_box {
+        width: 100%;
+
+        .left {
+            display: none
+        }
+
+        .right {
+            width: 100%;
+        }
+    }
+
+    // form 개별
+    form {
+        input {
+            width: 367px;
+            height: 36px;
+        }
+
+        textarea {
+            width: 367px;
+            height: 180px;
+        }
+
+    }
+
+    //title 개별
+    .sect1 .title1 {
+        font-size: 58px;
+    }
+
+
+    .sect1 .sub_title1_1 {
+        font-size: 16px;
+    }
+
+}

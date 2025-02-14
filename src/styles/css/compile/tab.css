@@ -1,0 +1,28 @@
+.tab_boxs635 {
+  width: 100%;
+  height: 635px;
+  border: 1px solid #000;
+}
+
+.tab_boxs1000 {
+  width: 100%;
+  height: 1000px;
+  border: 1px solid #000;
+}
+
+.tab_boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tab_boxs .tab_box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.tab_boxs .tab_box.on {
+  display: block;
+}

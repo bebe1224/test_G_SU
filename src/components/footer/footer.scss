@@ -1,0 +1,201 @@
+@import "../../styles/scss/color.scss";
+@import "../../styles/scss/flex_mixins.scss";
+
+// 푸터 =====
+footer {
+    width: 100%;
+    height: 280px;
+
+    .inner {
+        @include fsbc;
+        margin: 0 auto;
+        width: 1280px;
+        height: 100%;
+        color: $secondary-color12;
+
+        .wrap {
+            @include fcc;
+            gap: 20px;
+
+            .Area_1 {
+                @include fcsc;
+                gap: 8px;
+                font-weight: bold;
+                height: 164px;
+                padding-right: 20px;
+                border-right: 1px solid $primary-color3;
+
+                .tel {
+                    font-size: 21px;
+                }
+
+                .mail {
+                    font-size: 16px;
+                    color: $primary-color3;
+                }
+            }
+
+            .A_wrap {
+                @include fc;
+                gap: 20px;
+
+                .Area_2 {
+                    @include fsc;
+                    gap: 58px;
+                    font-weight: bold;
+                    font-size: 20px;
+
+                    .company {}
+
+                    .boss {
+                        span {
+                            color: $primary-color3;
+                        }
+                    }
+
+                    .number {
+                        span {
+                            color: $primary-color3;
+                        }
+                    }
+                }
+
+                .Area_3 {
+                    @include fsc;
+                    gap: 48px;
+
+                    .adress {
+                        font-weight: bold;
+                        font-size: 20px;
+
+                        span {
+                            font-size: 16px;
+                            color: $primary-color3;
+                            padding-left: 48px;
+                        }
+                    }
+                }
+
+                .Area_4 {
+                    @include fsc;
+                    gap: 48px;
+
+                    .adress {
+                        font-weight: bold;
+                        font-size: 21px;
+
+                        span {
+                            font-size: 16px;
+                            color: $primary-color3;
+                            padding-left: 48px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .f_logo {
+            img {}
+        }
+
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    footer {
+        width: 100%;
+        height: 360px;
+
+        .inner {
+            @include fcs;
+            flex-direction: column-reverse;
+            gap: 24px;
+            width: 440px;
+            height: 100%;
+
+            .wrap {
+                @include fcs;
+                flex-direction: column-reverse;
+                gap: 24px;
+
+                .Area_1 {
+                    @include fcsc;
+                    gap: 8px;
+                    height: auto;
+                    padding-right: 20px;
+                    border-right: none;
+
+                    .tel {
+                        font-size: 21px;
+                    }
+
+                    .mail {
+                        font-size: 16px;
+                        color: $primary-color3;
+                    }
+                }
+
+                .A_wrap {
+                    // @include fc;
+                    gap: 24px;
+
+                    .Area_2 {
+                        gap: 16px;
+                        font-size: 16px;
+                        // .company {}
+
+                        .boss {
+                            span {}
+                        }
+
+                        .number {
+                            letter-spacing: -1px;
+
+                            span {}
+                        }
+                    }
+
+                    .Area_3 {
+                        // @include fsc;
+                        gap: 16px;
+
+                        .adress {
+                            font-size: 16px;
+
+                            span {
+                                font-size: 12px;
+                                padding-left: 51px;
+                                letter-spacing: -1px;
+                            }
+                        }
+                    }
+
+                    .Area_4 {
+                        @include fsc;
+                        gap: 16px;
+
+                        .adress {
+                            font-weight: bold;
+                            font-size: 16px;
+
+                            span {
+                                font-size: 12px;
+                                padding-left: 51px;
+                                letter-spacing: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .f_logo {
+                width: 120px;
+
+                img {
+                    width: 120px;
+                }
+            }
+
+        }
+    }
+}

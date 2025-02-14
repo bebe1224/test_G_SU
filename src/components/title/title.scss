@@ -1,0 +1,146 @@
+@import "../../styles/scss/color.scss";
+@import "../../styles/scss/flex_mixins.scss";
+
+// main_page_title
+.title1 {
+    font-size: 58px;
+    font-weight: bold;
+    color: $primary-color0;
+}
+
+.sub_title1 {
+    font-size: 24px;
+    color: $primary-color0;
+
+    span {
+        font-family: "DM Serif Display", serif;
+    }
+}
+
+.sub_title1_1 {
+    font-size: 32px;
+    color: $secondary-color4;
+}
+
+.title2 {
+    font-size: 58px;
+    font-weight: bold;
+    color: $primary-color1;
+
+    span {
+        color: $secondary-color1;
+    }
+}
+
+.sub_title2 {
+    font-size: 24px;
+
+    span {
+        font-family: "DM Serif Display", serif;
+    }
+}
+
+// About Us_title
+.title3 {
+    font-family: "DM Serif Display", serif;
+    color: $primary-color0;
+    font-size: 58px;
+}
+
+.sub_title3 {
+    color: $primary-color0;
+    font-size: 24px;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.title4 {
+    font-family: "Italiana", serif;
+    color: $primary-color2;
+    font-size: 58px;
+}
+
+.sub_title4 {
+    font-weight: bold;
+    color: $primary-color2;
+    font-size: 24px;
+
+    span {
+        color: $primary-color3;
+        font-size: 16px;
+    }
+}
+
+// Project and Achievements
+// .title1 {} 사용됨
+// .sub_title1_1 사용됨
+// .title2{} 사용됨
+.title5 {
+    color: $primary-color1;
+    font-size: 58px;
+}
+
+.sub_title5 {
+    font-size: 24px;
+    font-weight: bold;
+
+    span {
+        color: $primary-color3;
+        font-size: 16px;
+    }
+}
+
+// Business
+//title5 사용됨 
+.sub_title6 {
+    font-size: 28px;
+    color: $primary-color1;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+//contact_us
+// .title1 사용됨 
+//.sub_title1_1 사용됨
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    // main_page_title
+    .title1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: $primary-color0;
+    }
+
+    .sub_title1 {
+        font-size: 18px;
+    }
+
+    .sub_title1_1 {
+        font-size: 32px;
+        color: $secondary-color4;
+    }
+
+    .title2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: $primary-color1;
+
+        span {
+            color: $secondary-color1;
+        }
+    }
+
+    .sub_title2 {
+        font-size: 18px;
+
+        span {
+            font-family: "DM Serif Display", serif;
+        }
+    }
+}

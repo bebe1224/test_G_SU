@@ -1,0 +1,167 @@
+footer {
+  width: 100%;
+  height: 280px;
+}
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1280px;
+  height: 100%;
+  color: #2c2c2c;
+}
+footer .inner .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .inner .wrap .Area_1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: bold;
+  height: 164px;
+  padding-right: 20px;
+  border-right: 1px solid #838383;
+}
+footer .inner .wrap .Area_1 .tel {
+  font-size: 21px;
+}
+footer .inner .wrap .Area_1 .mail {
+  font-size: 16px;
+  color: #838383;
+}
+footer .inner .wrap .A_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .inner .wrap .A_wrap .Area_2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 58px;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .inner .wrap .A_wrap .Area_2 .boss span {
+  color: #838383;
+}
+footer .inner .wrap .A_wrap .Area_2 .number span {
+  color: #838383;
+}
+footer .inner .wrap .A_wrap .Area_3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 48px;
+}
+footer .inner .wrap .A_wrap .Area_3 .adress {
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .inner .wrap .A_wrap .Area_3 .adress span {
+  font-size: 16px;
+  color: #838383;
+  padding-left: 48px;
+}
+footer .inner .wrap .A_wrap .Area_4 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 48px;
+}
+footer .inner .wrap .A_wrap .Area_4 .adress {
+  font-weight: bold;
+  font-size: 21px;
+}
+footer .inner .wrap .A_wrap .Area_4 .adress span {
+  font-size: 16px;
+  color: #838383;
+  padding-left: 48px;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  footer {
+    width: 100%;
+    height: 360px;
+  }
+  footer .inner {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column-reverse;
+    gap: 24px;
+    width: 440px;
+    height: 100%;
+  }
+  footer .inner .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  footer .inner .wrap .Area_1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+    height: auto;
+    padding-right: 20px;
+    border-right: none;
+  }
+  footer .inner .wrap .Area_1 .tel {
+    font-size: 21px;
+  }
+  footer .inner .wrap .Area_1 .mail {
+    font-size: 16px;
+    color: #838383;
+  }
+  footer .inner .wrap .A_wrap {
+    gap: 24px;
+  }
+  footer .inner .wrap .A_wrap .Area_2 {
+    gap: 16px;
+    font-size: 16px;
+  }
+  footer .inner .wrap .A_wrap .Area_2 .number {
+    letter-spacing: -1px;
+  }
+  footer .inner .wrap .A_wrap .Area_3 {
+    gap: 16px;
+  }
+  footer .inner .wrap .A_wrap .Area_3 .adress {
+    font-size: 16px;
+  }
+  footer .inner .wrap .A_wrap .Area_3 .adress span {
+    font-size: 12px;
+    padding-left: 51px;
+    letter-spacing: -1px;
+  }
+  footer .inner .wrap .A_wrap .Area_4 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+  }
+  footer .inner .wrap .A_wrap .Area_4 .adress {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  footer .inner .wrap .A_wrap .Area_4 .adress span {
+    font-size: 12px;
+    padding-left: 51px;
+    letter-spacing: -1px;
+  }
+  footer .inner .f_logo {
+    width: 120px;
+  }
+  footer .inner .f_logo img {
+    width: 120px;
+  }
+}

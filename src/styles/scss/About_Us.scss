@@ -1,0 +1,226 @@
+@import "../scss/color.scss";
+@import "../scss/flex_mixins.scss";
+
+//sect 개별(배경 위치 등등)
+.sect1 {
+    background: url(/src/assets/img/About_Us/sect1_bg.png)no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.sect2 {
+    .inner {
+        .i_w {
+            @include fcc;
+            width: 510px;
+            height: 680px;
+            overflow: hidden;
+            border-radius: 9px;
+
+            img {
+                width: 100%;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.sect3 {
+    background: url(/src/assets/img/About_Us/sect3_bg.png)no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.sect4 {
+    .inner {
+        @include fcc;
+
+        picture {
+            img {}
+        }
+    }
+}
+
+// .title 개별
+.sect1 {
+    .inner {
+        @include fec;
+
+        .wrap {
+            @include fcsc;
+            gap: 52px;
+            width: 450px;
+
+            .title3 {}
+
+            .sub_title3 {
+                letter-spacing: -1.2px;
+            }
+        }
+    }
+}
+
+.sect2 {
+    .inner {
+        @include fsbc;
+
+        // .i_w {} 여기있음 
+        .wrap {
+            @include fcsc;
+            gap: 128px;
+            width: 595px;
+            padding-bottom: 104px;
+
+            //.title4{} 여기있음
+            .wrap1 {
+                @include fcsc;
+                gap: 16px;
+
+                .sub_title4 {
+                    @include fsc;
+                    gap: 16px;
+
+                    p {
+                        width: 172px;
+                    }
+
+                    span {}
+
+                    &:nth-of-type(5),
+                    &:nth-of-type(6) {
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sect3 {
+    .inner {
+        @include fcc;
+        // .wrap {
+        //     .roller {
+        //         .rolling_list {
+        //             .item {
+        //                 span {}
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+
+//banner 위치
+.sect3 {
+    @include fce;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    //sect 개별(배경 위치 등등)
+    .sect1 {
+        background: url(/src/assets/img/About_Us/M_sect1_bg.png)no-repeat center/cover;
+    }
+
+    .sect4 {
+        .inner {
+            @include fcc;
+
+            picture {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // .title 개별
+    .sect1 {
+        .inner {
+            @include fec;
+
+            .wrap {
+                @include fccc;
+                gap: 52px;
+                width: 450px;
+
+                .title3 {
+                    font-size: 32px;
+                }
+
+                .sub_title3 {
+                    text-align: center;
+                    font-size: 18px;
+                    letter-spacing: -1.5px;
+                }
+            }
+        }
+    }
+
+    .sect2 {
+        .inner {
+            @include fsbc;
+            position: relative;
+
+            .i_w {
+                position: absolute;
+                ;
+                top: 36%;
+                left: 29%;
+                transform: translate(-50%, -50%);
+                width: 250px;
+                height: auto;
+            }
+
+            .wrap {
+                @include fcsc;
+                gap: 400px;
+                width: 474px;
+                padding-bottom: 0px;
+
+                .title4 {}
+
+                .wrap1 {
+                    @include fcsc;
+                    gap: 16px;
+
+
+                    .sub_title4 {
+                        @include fsc;
+                        gap: 16px;
+
+                        p {
+                            width: 124px;
+                            font-size: 18px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            width: 290px;
+                        }
+
+                        &:nth-of-type(5),
+                        &:nth-of-type(6) {
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sect3 {
+        .inner {
+            @include fcc;
+
+            .title3 {
+                font-size: 36px;
+            }
+        }
+    }
+}
