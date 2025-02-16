@@ -1,3 +1,38 @@
+.bars {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.header .glob {
+  width: 36px;
+  height: 36px;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header .glob img {
+  width: 100%;
+}
+.header .glob:hover {
+  opacity: 1;
+}
+
+.header1 .glob {
+  width: 36px;
+  height: 36px;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header1 .glob img {
+  filter: invert(100%);
+  width: 100%;
+}
+.header1 .glob:hover {
+  opacity: 1;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -37,7 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
 }
 .header .inner nav .gnb {
   display: flex;
@@ -51,19 +86,6 @@
 }
 .header .inner nav .gnb .main_menu a:hover {
   color: #838383;
-}
-.header .inner nav .glob {
-  width: 36px;
-  height: 36px;
-  opacity: 0.5;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-.header .inner nav .glob img {
-  width: 100%;
-}
-.header .inner nav .glob:hover {
-  opacity: 1;
 }
 
 .header1 {
@@ -105,7 +127,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
 }
 .header1 .inner nav .gnb {
   display: flex;
@@ -122,22 +144,22 @@
 .header1 .inner nav .gnb .main_menu a:hover {
   color: #CFCFCF;
 }
-.header1 .inner nav .glob {
-  width: 36px;
-  height: 36px;
-  opacity: 0.5;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-.header1 .inner nav .glob img {
-  filter: invert(100%);
-  width: 100%;
-}
-.header1 .inner nav .glob:hover {
-  opacity: 1;
+
+.m_header {
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .bars {
+    visibility: visible;
+    width: 30px;
+    height: 24px;
+  }
+  .header .bars .bar {
+    background-color: #8D8D8D;
+  }
   .header {
     display: flex;
     justify-content: center;
@@ -166,7 +188,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
   }
   .header .inner nav .gnb {
     display: flex;
@@ -177,21 +199,6 @@
   }
   .header .inner nav .gnb .main_menu a {
     font-size: 24px;
-  }
-  .header .inner nav .glob {
-    width: 36px;
-    height: 36px;
-    opacity: 0.5;
-    transition: 0.3s ease-in-out;
-  }
-  .header .inner nav .glob a {
-    width: 100%;
-  }
-  .header .inner nav .glob a img {
-    width: 100%;
-  }
-  .header .inner nav .glob:hover {
-    opacity: 1;
   }
   .header1 {
     display: flex;
@@ -206,9 +213,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 440px;
+    width: 90%;
   }
   .header1 .inner h1 {
+    z-index: 99;
     width: 138px;
     height: 48px;
   }
@@ -220,7 +228,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
   }
   .header1 .inner nav .gnb {
     display: flex;
@@ -233,23 +241,51 @@
     color: #FFFFFF;
     font-size: 24px;
   }
-  .header1 .inner nav .gnb .main_menu .sub_menu {
-    display: none;
+  .m_header {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    z-index: 99;
+    background-color: #F5F5F5;
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
-  .header1 .inner nav .glob {
-    width: 36px;
-    height: 36px;
+  .m_header.scrolled {
+    left: 0;
+    opacity: 1;
+  }
+  .m_header .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+  }
+  .m_header .inner h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .m_header .inner h1:hover {
     opacity: 0.5;
+  }
+  .m_header .inner nav .gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .m_header .inner nav .gnb .main_menu a {
+    font-size: 24px;
     transition: 0.3s ease-in-out;
   }
-  .header1 .inner nav .glob a {
-    width: 100%;
-  }
-  .header1 .inner nav .glob a img {
-    filter: invert(100%);
-    width: 100%;
-  }
-  .header1 .inner nav .glob:hover {
-    opacity: 1;
+  .m_header .inner nav .gnb .main_menu a:hover {
+    color: #838383;
   }
 }

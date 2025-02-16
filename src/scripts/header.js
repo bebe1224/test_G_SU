@@ -29,3 +29,26 @@ window.addEventListener("scroll", function () {
     // 마지막 스크롤 위치를 현재 스크롤 위치로 업데이트
     lastScrollY = currentScrollY;
 });
+
+//M_menu 클릭시 이벤트리스너
+const Mmenu = document.querySelector('#M_menu');
+const Mheader = document.querySelector('#m_header');
+const Xbtn = document.querySelector('#X')
+Mmenu.addEventListener('click', () => {
+    Mheader.classList.add('scrolled')
+})
+Xbtn.addEventListener('click', () => {
+    Mheader.classList.remove('scrolled')
+})
+//esc 키 눌렀을때
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        Mheader.classList.remove('scrolled');
+    }
+});
+//화면 크기가 767px 이상일 때도 'scrolled' 클래스 제거
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 767 && Mheader.classList.contains('scrolled')) {
+        Mheader.classList.remove('scrolled');
+    }
+});

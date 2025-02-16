@@ -1,0 +1,53 @@
+.bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.bars:hover {
+  opacity: 1;
+}
+.bars:hover .bar:nth-child(1),
+.bars:hover .bar:nth-child(3) {
+  width: 22px;
+}
+.bars .bar {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.X {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+.X:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+.X .bar {
+  position: absolute;
+  background-color: #434343;
+  width: 30px;
+  height: 4px;
+}
+.X .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.X .bar:nth-child(2) {
+  transform: rotate(-45deg);
+}

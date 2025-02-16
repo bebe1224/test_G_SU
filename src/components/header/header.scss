@@ -1,6 +1,47 @@
 @import "../../styles/scss/color.scss";
 @import "../../styles/scss/flex_mixins.scss";
 
+//bar 개별 안보이는 상태
+.bars {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+//glob 개별 
+.header .glob {
+    width: 36px;
+    height: 36px;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.header1 .glob {
+    width: 36px;
+    height: 36px;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    img {
+        filter: invert(100%);
+        width: 100%;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 .header {
     @include fcc;
     width: 100%;
@@ -38,8 +79,9 @@
 
         nav {
             @include fcc;
-            gap: 32px;
+            gap: 16px;
 
+            //보이는 상태
             .gnb {
                 @include fcc;
                 gap: 68px;
@@ -53,22 +95,6 @@
                             color: $primary-color3;
                         }
                     }
-                }
-            }
-
-            .glob {
-                width: 36px;
-                height: 36px;
-                opacity: 0.5;
-                transition: 0.3s ease-in-out;
-                cursor: pointer;
-
-                img {
-                    width: 100%;
-                }
-
-                &:hover {
-                    opacity: 1;
                 }
             }
         }
@@ -112,8 +138,9 @@
 
         nav {
             @include fcc;
-            gap: 32px;
+            gap: 16px;
 
+            //보이는 상태
             .gnb {
                 @include fcc;
                 gap: 68px;
@@ -132,28 +159,30 @@
 
                 }
             }
-
-            .glob {
-                width: 36px;
-                height: 36px;
-                opacity: 0.5;
-                transition: 0.3s ease-in-out;
-                cursor: pointer;
-
-                img {
-                    filter: invert(100%);
-                    width: 100%;
-                }
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
         }
     }
 }
 
+// 안보이는 상태
+.m_header {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
+
+    //bar 개별 보이는 상태 
+    .bars {
+        visibility: visible;
+        width: 30px;
+        height: 24px;
+    }
+
+    .header .bars .bar {
+        background-color: $secondary-color6;
+    }
+
     .header {
         @include fcc;
         min-width: 480px;
@@ -179,8 +208,9 @@
 
             nav {
                 @include fcc;
-                gap: 32px;
+                gap: 16px;
 
+                //안보이는 상태
                 .gnb {
                     @include fcc;
                     gap: 68px;
@@ -190,25 +220,6 @@
                         a {
                             font-size: 24px;
                         }
-                    }
-                }
-
-                .glob {
-                    width: 36px;
-                    height: 36px;
-                    opacity: 0.5;
-                    transition: 0.3s ease-in-out;
-
-                    a {
-                        width: 100%;
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-
-                    &:hover {
-                        opacity: 1;
                     }
                 }
             }
@@ -225,9 +236,10 @@
 
         .inner {
             @include fsbc;
-            width: 440px;
+            width: 90%;
 
             h1 {
+                z-index: 99;
                 width: 138px;
                 height: 48px;
 
@@ -239,47 +251,74 @@
 
             nav {
                 @include fcc;
-                gap: 32px;
+                gap: 16px;
 
+                //안보이는 상태
                 .gnb {
                     @include fcc;
                     gap: 68px;
                     display: none;
 
                     .main_menu {
-
                         a {
                             color: $primary-color0;
                             font-size: 24px;
                         }
-
-                        .sub_menu {
-                            display: none;
-
-                            li {
-                                a {}
-                            }
-                        }
                     }
                 }
+            }
+        }
+    }
 
-                .glob {
-                    width: 36px;
-                    height: 36px;
+    // 보이는 상태
+    .m_header {
+        position: fixed;
+        top: 0;
+        left: 100vw;
+        z-index: 99;
+        background-color: $secondary-color9;
+        visibility: visible;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+
+        &.scrolled {
+            left: 0;
+            opacity: 1;
+        }
+
+        .inner {
+            @include fccc;
+            gap: 48px;
+            margin: 0 auto;
+            width: 90%;
+            height: 100%;
+
+            h1 {
+                opacity: 1;
+                transition: opacity 0.3s ease-in-out;
+
+                &:hover {
                     opacity: 0.5;
-                    transition: 0.3s ease-in-out;
+                }
+            }
 
-                    a {
-                        width: 100%;
+            nav {
+                .gnb {
+                    @include fccc;
+                    gap: 32px;
 
-                        img {
-                            filter: invert(100%);
-                            width: 100%;
+                    .main_menu {
+                        a {
+                            font-size: 24px;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                color: $primary-color3;
+                            }
                         }
-                    }
-
-                    &:hover {
-                        opacity: 1;
                     }
                 }
             }
