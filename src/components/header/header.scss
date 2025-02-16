@@ -156,6 +156,7 @@
 @media (min-width: 0px) and (max-width: 767px) {
     .header {
         @include fcc;
+        min-width: 480px;
         height: 80px;
 
         &.scrolled {
@@ -164,7 +165,7 @@
 
         .inner {
             @include fsbc;
-            width: 440px;
+            width: 90%;
 
             h1 {
                 width: 138px;

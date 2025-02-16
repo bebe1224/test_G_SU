@@ -103,14 +103,14 @@ footer {
 
 @media (min-width: 0px) and (max-width: 767px) {
     footer {
-        width: 100%;
+        min-width: 480px;
         height: 360px;
 
         .inner {
             @include fcs;
             flex-direction: column-reverse;
             gap: 24px;
-            width: 440px;
+            width: 90%;
             height: 100%;
 
             .wrap {

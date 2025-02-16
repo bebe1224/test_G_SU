@@ -86,7 +86,7 @@ footer .inner .wrap .A_wrap .Area_4 .adress span {
 }
 @media (min-width: 0px) and (max-width: 767px) {
   footer {
-    width: 100%;
+    min-width: 480px;
     height: 360px;
   }
   footer .inner {
@@ -95,7 +95,7 @@ footer .inner .wrap .A_wrap .Area_4 .adress span {
     align-items: start;
     flex-direction: column-reverse;
     gap: 24px;
-    width: 440px;
+    width: 90%;
     height: 100%;
   }
   footer .inner .wrap {

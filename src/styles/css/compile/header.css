@@ -142,6 +142,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 480px;
     height: 80px;
   }
   .header.scrolled {
@@ -151,7 +152,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 440px;
+    width: 90%;
   }
   .header .inner h1 {
     width: 138px;
