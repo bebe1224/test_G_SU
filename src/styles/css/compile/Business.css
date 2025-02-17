@@ -315,7 +315,7 @@ body {
     flex-wrap: wrap;
   }
   .btn_wrap .btn {
-    width: 218px !important;
+    width: 50% !important;
     border-radius: 9px !important;
   }
   .height635 {

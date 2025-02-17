@@ -415,7 +415,8 @@ body {
         flex-wrap: wrap;
 
         .btn {
-            width: 218px !important;
+            //btn_wrap 의 50% 크기를 유지
+            width: 50% !important;
             border-radius: 9px !important;
         }
     }
