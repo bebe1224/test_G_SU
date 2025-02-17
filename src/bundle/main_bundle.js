@@ -1,0 +1,6 @@
+import btn from '../scripts/btn/mainPage_btn'
+import gsapM from '../scripts/gsap/main_gsap'
+import header from '../scripts/header'
+import mediaQuery from '../scripts/mediaQuery'
+import swipper400 from '../scripts/swipper/swipper400'
+import translate from '../scripts/translate'

@@ -22,6 +22,7 @@ function wrapElements() {
   const style = document.createElement('style');
   style.textContent = `
     .virtual-wrapper {
+      width: 80%;
       display: flex;
       justify-content: center;
       align-items: center;

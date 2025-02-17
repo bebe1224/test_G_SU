@@ -313,13 +313,11 @@ body {
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
   }
   .btn_wrap .btn {
     width: 50% !important;
     border-radius: 9px !important;
-  }
-  .height635 {
-    width: 85% !important;
   }
   .sect2 .swiper .swiper-wrapper .swiper-slide {
     display: flex;

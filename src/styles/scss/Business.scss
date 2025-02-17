@@ -413,6 +413,7 @@ body {
     .btn_wrap {
         @include fsc;
         flex-wrap: wrap;
+        width: 100%;
 
         .btn {
             //btn_wrap 의 50% 크기를 유지
@@ -422,9 +423,7 @@ body {
     }
 
     //  swipper 개별
-    .height635 {
-        width: 85% !important;
-    }
+    .height635 {}
 
     .sect2 .swiper {
         .swiper-wrapper {
