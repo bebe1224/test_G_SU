@@ -142,12 +142,12 @@
     // .title 개별
     .sect1 {
         .inner {
-            @include fec;
+            @include fcc;
 
             .wrap {
                 @include fccc;
                 gap: 52px;
-                width: 450px;
+                width: 340px;
 
                 .title3 {
                     font-size: 32px;
@@ -156,7 +156,7 @@
                 .sub_title3 {
                     text-align: center;
                     font-size: 18px;
-                    letter-spacing: -1.5px;
+                    letter-spacing: -1px;
                 }
             }
         }
