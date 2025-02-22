@@ -8,9 +8,8 @@
     <!-- Api 키 이게있어야 작동됨 -->
     <!-- 회사 고유 api키로 나중에 바꿔야함 -->
     <script src="../scripts/Api/map.js" defer></script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=//이부분에 키를 넣어야함//">
-        </script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=//이부분에 키를 넣어야함//">
+    </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../styles/css/reset.css">
     <link rel="stylesheet" href="../styles/css/compile/Contact_US.css">
@@ -86,8 +85,10 @@
     <section class="sect sect1">
         <div class="inner">
             <div class="wrap">
-                <div class="title1">문의하기</div>
-                <div class="sub_title1_1">G-SU' 는 당신의 이야기를 듣고 싶어합니다</div>
+                <div class="title1 translate_texts" data-ko="문의하기" data-en="Contact Us">문의하기</div>
+                <div class="sub_title1_1 translate_texts" data-ko="G-SU' 는 당신의 이야기를 듣고 싶어합니다"
+                    data-en="G-SU wants to hear your story.">
+                    G-SU' 는 당신의 이야기를 듣고 싶어합니다</div>
             </div>
         </div>
     </section>
@@ -95,36 +96,56 @@
         <div class="inner">
             <div class="contact_box">
                 <div class="left">
-                    <p>문의시간 : 월-금: 오전9시- 오후6시</p>
-                    <p>이메일 : g-suent@ su.co,kr</p>
-                    <p>연락처 : 010-6506-4003</p>
-                    <p>주소 : 대한민국 부산광역시 </p>
-                    <p>중구 중앙대로 70, </p>
-                    <p>동원산업빌딩 10층</p>
+                    <p class="translate_texts" data-ko="문의시간 : 월-금: 오전9시- 오후6시"
+                        data-en="Contact Hours: Monday to Friday, 9:00 AM - 6:00 PM">
+                        문의시간 : 월-금: 오전9시- 오후6시
+                    </p>
+                    <p class="translate_texts" data-ko="이메일 : g-suent@ su.co,kr" data-en="Email: g-suent@su.co.kr">
+                        이메일 : g-suent@ su.co,kr
+                    </p>
+                    <p class="translate_texts" data-ko="연락처 : 010-6506-4003" data-en="Contact: 010-6506-4003">
+                        연락처 : 010-6506-4003
+                    </p>
+                    <p class="translate_texts" data-ko="주소 : 대한민국 부산광역시"
+                        data-en="Address: 10th Floor, Dongwon Industry Building,">
+                        주소 : 대한민국 부산광역시
+                    </p>
+                    <p class="translate_texts" data-ko="중구 중앙대로 70," data-en="70 Jungang-daero, Jung-gu,">
+                        중구 중앙대로 70,
+                    </p>
+                    <p class="translate_texts" data-ko="동원산업빌딩 10층" data-en="Busan, South Korea">
+                        동원산업빌딩 10층
+                    </p>
                 </div>
                 <div class="right">
                     <form action="" method="post">
                         <div class="wrap">
-                            <label for="name">이름</label>
-                            <input type="text" name="name" id="name" placeholder="이름" required>
+                            <label for="name" class="translate_texts" data-ko="이름" data-en="Name">이름</label>
+                            <input type="text" name="name" id="name" placeholder="이름을 입력하세요"
+                                data-placeholder-ko="이름을 입력하세요" data-placeholder-en="Enter your name" required>
                         </div>
                         <div class="wrap">
-                            <label for="email">이메일</label>
-                            <input type="email" name="email" id="email" placeholder="이메일" required>
+                            <label for="email" class="translate_texts" data-ko="이메일" data-en="Email">이메일</label>
+                            <input type="email" name="email" id="email" placeholder="이메일을 입력하세요"
+                                data-placeholder-ko="이메일을 입력하세요" data-placeholder-en="Enter your email" required>
                         </div>
                         <div class="wrap">
-                            <label for="phone">연락처</label>
-                            <input type="tel" name="phone" id="phone" placeholder="휴대폰 번호" required>
+                            <label for="phone" class="translate_texts" data-ko="연락처" data-en="Tel">연락처</label>
+                            <input type="tel" name="phone" id="phone" placeholder="연락처를 입력하세요"
+                                data-placeholder-ko="연락처를 입력하세요" data-placeholder-en="Enter your contact number">
                         </div>
                         <div class="wrap">
-                            <label for="title">제목</label>
-                            <input type="text" name="title" id="title" placeholder="제목" required>
+                            <label for="title" class="translate_texts" data-ko="제목" data-en="Title">제목</label>
+                            <input type="text" name="title" id="title" placeholder="제목을 입력하세요"
+                                data-placeholder-ko="제목을 입력하세요" data-placeholder-en="Enter the subject" required>
                         </div>
                         <div class="wrap">
-                            <textarea name="message" id="message" rows="5" placeholder="메시지를 입력하세요." required
+                            <textarea name="message" id="message" rows="5" placeholder="메시지를 입력하세요."
+                                data-placeholder-ko="메시지를 입력하세요." data-placeholder-en="Enter your message." required
                                 maxlength="200" wrap="hard" spellcheck="true"></textarea>
                         </div>
-                        <button type="submit" class="btn10 btn">보내기</button>
+                        <button type="submit" class="btn10 btn translate_texts" data-ko="보내기"
+                            data-en="SEND">보내기</button>
                     </form>
                 </div>
             </div>
@@ -134,19 +155,24 @@
         <!-- api 사용시 -->
         <!-- <div id="map"></div> -->
         <div class="inner">
-            <div class="title2">
+            <div class="title2 translate_texts" data-ko="오시는길" data-en="Directions">
                 오시는길
             </div>
             <div class="wrap">
                 <div class="i_w">
                     <img src="../assets/img/Contact_US/busan.jpg" alt="부산본사">
-                    <span>부산1호선 중앙역 6번출구
+                    <span class="translate_texts" data-ko="부산1호선 중앙역 6번출구
+                    동원산업빌딩 10층" data-en="Busan Line 1, Jungang Station, Exit 6
+                    10th Floor, Dongwon Industry Building">
+                        부산1호선 중앙역 6번출구
                         동원산업빌딩 10층
                     </span>
                 </div>
                 <div class="i_w">
                     <img src="../assets/img/Contact_US/seoul.jpg" alt="서울지사">
-                    <span>서울 가산디지털단지역 10번 출구에서 523m</span>
+                    <span class="translate_texts" data-ko="서울 가산디지털단지역 10번 출구에서 523m" data-en="523m from Exit 10, Gasan Digital Complex Station, Seoul">
+                        서울 가산디지털단지역 10번 출구에서 523m
+                    </span>
                 </div>
             </div>
         </div>
@@ -177,12 +203,15 @@
                         </div>
                     </div>
                     <div class="Area_3">
-                        <div class="adress translate_texts" data-ko=" 부산 본사<span>부산시 중구 중앙대로 70, 10층(동원산업빌딩)</span>" data-en="Busan Office<span>70 Jungang-daero, 10F, Jung-gu, Busan (Dongwon Industry Building)</span>">
+                        <div class="adress translate_texts" data-ko=" 부산 본사<span>부산시 중구 중앙대로 70, 10층(동원산업빌딩)</span>"
+                            data-en="Busan Office<span>70 Jungang-daero, 10F, Jung-gu, Busan (Dongwon Industry Building)</span>">
                             부산 본사<span>부산시 중구 중앙대로 70, 10층(동원산업빌딩)</span>
                         </div>
                     </div>
                     <div class="Area_4">
-                        <div class="adress translate_texts" data-ko="     서울 지사<span>서울시 금천구 가산디지털1로 205-27, 1005호(가산A1타워)</span>" data-en="Seoul Office<span>205-27 Gasan Digital 1-ro, 1005, Geumcheon-gu, Seoul (Gasan A1 Tower)</span>">
+                        <div class="adress translate_texts"
+                            data-ko="     서울 지사<span>서울시 금천구 가산디지털1로 205-27, 1005호(가산A1타워)</span>"
+                            data-en="Seoul Office<span>205-27 Gasan Digital 1-ro, 1005, Geumcheon-gu, Seoul (Gasan A1 Tower)</span>">
                             서울 지사<span>서울시 금천구 가산디지털1로 205-27, 1005호(가산A1타워)</span>
                         </div>
                     </div>

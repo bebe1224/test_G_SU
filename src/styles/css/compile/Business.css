@@ -318,6 +318,7 @@ body {
   .btn_wrap .btn {
     width: 50% !important;
     border-radius: 9px !important;
+    font-size: 15px !important;
   }
   .sect2 .swiper .swiper-wrapper .swiper-slide {
     display: flex;

@@ -1,5 +1,6 @@
 const globButton = document.querySelector('.glob');
 const translateTexts = document.querySelectorAll('.translate_texts');
+const inputFields = document.querySelectorAll('input[placeholder], textarea[placeholder]');
 
 let currentLanguage = 'ko'; // 기본 언어는 한국어
 
@@ -10,5 +11,9 @@ globButton.addEventListener('click', () => {
     // 각 content 요소의 data-* 속성 값을 변경 (HTML도 포함)
     translateTexts.forEach((translateText) => {
         translateText.innerHTML = translateText.getAttribute(`data-${currentLanguage}`);
+    });
+
+    inputFields.forEach((inputField) => {
+        inputField.setAttribute('placeholder', inputField.getAttribute(`data-placeholder-${currentLanguage}`));
     });
 });
