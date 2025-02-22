@@ -127,20 +127,20 @@ footer .inner .wrap .A_wrap .Area_4 .adress span {
   }
   footer .inner .wrap .A_wrap .Area_2 {
     gap: 16px;
-    font-size: 16px;
+    font-size: 15px;
   }
   footer .inner .wrap .A_wrap .Area_2 .number {
-    letter-spacing: -1px;
+    letter-spacing: 0px;
   }
   footer .inner .wrap .A_wrap .Area_3 {
     gap: 16px;
   }
   footer .inner .wrap .A_wrap .Area_3 .adress {
-    font-size: 16px;
+    font-size: 14px;
   }
   footer .inner .wrap .A_wrap .Area_3 .adress span {
-    font-size: 12px;
-    padding-left: 51px;
+    font-size: 11px;
+    padding-left: 31px;
     letter-spacing: -1px;
   }
   footer .inner .wrap .A_wrap .Area_4 {
@@ -151,11 +151,11 @@ footer .inner .wrap .A_wrap .Area_4 .adress span {
   }
   footer .inner .wrap .A_wrap .Area_4 .adress {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
   }
   footer .inner .wrap .A_wrap .Area_4 .adress span {
-    font-size: 12px;
-    padding-left: 51px;
+    font-size: 11px;
+    padding-left: 31px;
     letter-spacing: -1px;
   }
   footer .inner .f_logo {

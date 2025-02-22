@@ -107,6 +107,7 @@
         filter: invert(1);
     }
 }
+
 .btn14 {
     position: absolute;
     top: 90%;
@@ -126,7 +127,7 @@
         }
     }
 
-    // 위치 크기지정
+    // 위치 크기지정, title 개별
     .sect1,
     .sect3 {
         .inner {
@@ -166,7 +167,7 @@
 
                 .title2 {
                     width: 280px;
-                    letter-spacing: -6px;
+                    letter-spacing: -3px;
                 }
 
                 .sub_title2 {
@@ -177,15 +178,19 @@
         }
     }
 
-
-    // 이미지,배경지정
-    .sect3 {
-        background: url(../../../assets/img/main_page/M_sect3_bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    // 타이틀 개별
+    .sect2 .sub_title2 {
+        color: black;
     }
+    .sub_title2 {
+        color: $primary-color0;
 
+        span {
+            &:nth-of-type(1) {
+                font-size: 32px;
+            }
+        }
+    }
     .sect4 {
         .inner {
             @include fcc;
@@ -200,12 +205,12 @@
                 .title2 {
                     text-align: center;
                     width: 280px;
-                    letter-spacing: -6px;
+                    letter-spacing: -3px;
                 }
 
                 .sub_title2 {
                     width: 400px;
-                    letter-spacing: -2px;
+                    letter-spacing: -1px;
                 }
             }
 
@@ -221,19 +226,12 @@
         }
     }
 
-    // 타이틀 개별
-    .sect2 .sub_title2 {
-        color: black;
-    }
-
-    .sub_title2 {
-        color: $primary-color0;
-
-        span {
-            &:nth-of-type(1) {
-                font-size: 32px;
-            }
-        }
+    // 이미지,배경지정
+    .sect3 {
+        background: url(../../../assets/img/main_page/M_sect3_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     //swiper 개별
