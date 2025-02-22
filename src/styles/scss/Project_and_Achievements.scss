@@ -127,7 +127,7 @@
                     .i_w {
                         @include fcc;
                         width: 100%;
-                        height: 150px;
+                        height: 170px;
                         overflow: hidden;
                         border-radius: 9px;
                     }
@@ -143,8 +143,9 @@
                             font-size: 18px;
 
                             p {
+                                color: $secondary-color12;
                                 max-width: 70px;
-                                letter-spacing: -2px;
+                                letter-spacing: -1px;
                             }
 
                             span {
